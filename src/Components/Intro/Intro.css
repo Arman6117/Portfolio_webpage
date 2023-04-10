@@ -85,3 +85,24 @@
     left: 28%;
 
 }
+.i-right>*:nth-child(4)
+{
+    transform: scale(0.6);
+    top: -19%;
+    left:-24%;
+    border-radius: 50%;
+}
+.blur
+{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    background:rgba(255, 175, 211, 0.376);
+    filter: blur(72px);
+    top: -18%;
+    left: 56%;
+    z-index: -9;
+}
+
+
+

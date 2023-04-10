@@ -32,12 +32,32 @@ export const Intro = () => {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={Boy} alt="" />
-        <div>
+        <img src={GlassEmoji} alt="" />
+        <div style={{top:'-4%', left:'68%'}}>
             <FloatingDiv
                img = {Crown}
                txt1= "Web"
                txt2= "Devloper"
             />
+        </div>
+        <div style={{top:'18rem', left:'0rem'}}>
+            <FloatingDiv
+               img = {Thumb}
+               txt1= "Beautifull"
+               txt2= "Designs"
+            />
+        </div>
+        <div className="blur" style={{backgroundColor:"rgb(255, 143, 255,0.500"}}>
+        </div>
+        
+        <div className="blur" style={{
+            background:"#C1F5FF",
+            top:"18rem",
+            left:"-9rem",
+            width:"21rem",
+            height:"11rem"
+
+            }}>
         </div>
       </div>
     </div>
