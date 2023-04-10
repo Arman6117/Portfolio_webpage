@@ -1,0 +1,8 @@
+.floatingDiv
+{
+    justify-content: space-between;
+    display: flex;
+    background: #fff;
+    border-radius: 17px;
+    box-shadow: var( --boxShadow);
+}
