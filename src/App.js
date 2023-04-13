@@ -5,6 +5,7 @@ import Services from "./Components/Services/Services";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import BackendSkills from "./Components/BackendSkills/BackendSkills";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <BackendSkills/>
       <Portfolio/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
