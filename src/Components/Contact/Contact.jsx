@@ -1,11 +1,14 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import './Contact.css'
+import { themeContext } from '../../Context';
 
 const Contact = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="contact">
         <div className="sm-left">
-            <span>Get In Touch</span>
+            <span  style={darkMode?{color:"white"}:null}>Get In Touch</span>
             <span>Contact Me</span>
             <div className="blur sm-blur1" style={{ background: "#ABF1FF94" }}></div>
 

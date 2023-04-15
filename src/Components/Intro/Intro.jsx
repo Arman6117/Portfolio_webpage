@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useContext}from "react";
 import "./Intro.css";
 import Github from "../../img/github.png";
 import Linkden from "../../img/linkedin.png";
@@ -12,15 +12,18 @@ import Crown from "../../img/crown.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { themeContext } from "../../Context";
 
 export const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   const transition = { duration: 2, type: "spring" };
   const [ref, inView] = useInView({ threshold: 0.5 });
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hey!! I Am </span>
+          <span style={darkMode?{color:"white"}:null}>Hey!! I Am </span>
           <span>Arman Patel</span>
           <span>
             I'm A Full-Stack Developer With Expertise In Front-End And Back-End

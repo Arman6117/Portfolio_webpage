@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useContext} from "react";
 import "./Service.css";
 import Glass from "../../img/glasses.png";
 import Heart from "../../img/heartemoji.png";
@@ -6,8 +6,11 @@ import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { themeContext } from "../../Context";
 
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   const transition = { duration: "2", type: "spring" };
   const [ref, inView] = useInView({ threshold: 0.5 });
 
@@ -15,7 +18,7 @@ const Services = () => {
     <div className="services" id="Services">
       {/* left side */}
       <div className="aw_txt">
-        <span>My Awesome</span>
+        <span style={darkMode?{color:"white"}:null} >My Awesome</span>
         <span>Services</span>
         <span>
           Lorem ipsum dolor sit amet consectetur
