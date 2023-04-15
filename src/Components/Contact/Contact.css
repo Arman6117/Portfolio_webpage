@@ -56,3 +56,21 @@
     top: 150rem;
     left: 19rem;
 }
+
+@media screen and (max-width: 480px) 
+{
+    .contact
+    {
+        display: flex;
+        flex-direction: column;
+        height: 44rem;
+    }
+    .sm-inputs
+    {
+        transform: scale(0.8);
+    }
+    .sm-blur2
+    {
+        display: none;
+    }
+}

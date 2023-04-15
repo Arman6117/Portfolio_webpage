@@ -23,3 +23,17 @@
     display: flex;
     gap: 2rem;
 }
+
+@media screen and (max-width: 480px) 
+{
+    
+    .f-content
+    { 
+        gap: 2rem;
+        transform: scale(0.8);
+    }
+    .f-icons
+    {
+        transform: scale(0.7);
+    }
+}

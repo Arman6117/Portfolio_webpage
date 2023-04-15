@@ -31,18 +31,18 @@
 }
 .b-mainCircle>:nth-child(2)
 {
-    left: -3rem;
-    top: 5rem;
+    left: -1rem;
+    top: 11rem;
 }
 .b-mainCircle>:nth-child(3)
 {
-    left: 6rem;
-    top: 5rem;
+    left: 13rem;
+    top: 11rem;
 }
 .b-mainCircle>:nth-child(4)
 {
-   left: 15rem;
-    top: 5rem;
+    left: 6rem;
+    top: 6rem;
 }
 .b-mainCircle>:nth-child(5)
 {
@@ -86,4 +86,30 @@
     background: navy;
     left: 18rem;
     top: 8rem;
+}
+
+@media screen and (max-width: 480px) 
+{
+    .backend
+    {
+        flex-direction: column;
+        height: 55rem;
+        gap: 5rem;
+        padding: 0;
+    }
+    .b-right
+    {
+        display: flex;
+        justify-content: start;
+        align-items:flex-start ;
+        transform: scale(0.7);
+    }
+    .b-mainCircle
+    {
+        position: static;
+    }
+    .b-backCircle
+    {
+        left: 8rem !important;
+    }
 }

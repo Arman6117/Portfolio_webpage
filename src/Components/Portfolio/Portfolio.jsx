@@ -8,7 +8,7 @@ import Music from '../../img/musicapp.png'
 import Ecom from '../../img/ecommerce.png'
 const Portfolio = () => {
   return (
-    <div className="portfolio">
+    <div className="portfolio" id='Portfolio'>
         {/* Heading */}
         <span>Recent Project</span>
         <span>Portfolio</span>

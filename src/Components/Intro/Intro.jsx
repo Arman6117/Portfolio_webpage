@@ -11,8 +11,11 @@ import Thumb from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 export const Intro = () => {
   const transition = { duration: 2, type: "spring" };
+  const [ref, inView] = useInView({ threshold: 0.5 });
   return (
     <div className="intro">
       <div className="i-left">
@@ -20,7 +23,6 @@ export const Intro = () => {
           <span>Hey!! I Am </span>
           <span>Arman Patel</span>
           <span>
-            {/* <img src={Boy} alt="Boy" /> */}
             I'm A Full-Stack Developer With Expertise In Front-End And Back-End
             Development. Let's Bring Your Vision To Life!{" "}
           </span>
@@ -33,23 +35,40 @@ export const Intro = () => {
           <img src={Instagram} alt="" />
         </div>
       </div>
-      <div className="i-right">
+      <div className="i-right" ref={ref}>
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={Boy} alt="" />
         <motion.img
-          animate={{ left: "-24%" }}
           initial={{ left: "-36%" }}
-          transition={{transition}}
+          whileInView={{ left: "-24%" }}
+          transition={transition}
           src={GlassEmoji}
           alt=""
         />
-        <div style={{ top: "-4%", left: "68%" }}>
-          <FloatingDiv img={Crown} txt1="Web" txt2="Devloper" />
-        </div>
-        <div style={{ top: "18rem", left: "0rem" }}>
-          <FloatingDiv img={Thumb} txt1="Beautifull" txt2="Designs" />
-        </div>
+
+        <motion.div
+          style={{ top: "-4%", left: "68%" }}
+          initial={{ left: "98%" }}
+          animate={inView ? { left: "68%" } : { left: "98%" }}
+          transition={inView ? transition : null}
+          className="floating-div"
+        >
+          <FloatingDiv img={Crown} txt1="Web" txt2="Developer" />
+        </motion.div>
+
+
+        <motion.div
+          style={{ top: "18rem", left: "0rem" }}
+          initial={{ left: "77%" }}
+          animate={inView? { left: "0%" }:{left:"77%"}}
+          transition={inView ? transition:null}
+          className="floating-div"
+        >
+          <FloatingDiv img={Thumb} txt1="Beautiful" txt2="Designs" />
+        </motion.div>
+
+
         <div
           className="blur"
           style={{ backgroundColor: "rgb(255, 143, 255,0.500" }}
