@@ -48,7 +48,7 @@ const BackendSkills = () => {
           viewport={{ margin: "-40px" }}
           style={darkMode?{background:"var(--black)",color:"white"}:null}
         >
-          <div className="b-secCircle" style={darkMode?{background:"black",color:"white"}:null}>
+          <div className="b-secCircle" style={darkMode?{background:"var(--black)",color:"white"}:null}>
             <img src={Mongo} alt="" />
           </div>
 

@@ -44,11 +44,7 @@
     left: 6rem;
     top: 6rem;
 }
-.b-mainCircle>:nth-child(5)
-{
-   left: 6rem;
-    top: 13rem;
-}
+
 .b-secCircle
 {
     width: 6rem;
@@ -112,4 +108,15 @@
     {
         left: 8rem !important;
     }
+    .b-mainCircle>:nth-child(3)
+{
+    left: 11rem;
+    top: 11rem;
+}
+    .b-mainCircle>:nth-child(4)
+{
+    left: 5rem;
+    top: 6rem;
+}
+
 }
