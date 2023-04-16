@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_webpage/static/css/main.ac9a8a1d.css",
-    "main.js": "/Portfolio_webpage/static/js/main.fa869006.js",
+    "main.css": "/Portfolio_webpage/static/css/main.a26a6c95.css",
+    "main.js": "/Portfolio_webpage/static/js/main.0a491cea.js",
     "static/media/ecommerce.png": "/Portfolio_webpage/static/media/ecommerce.522da76635d52117102b.png",
     "static/media/sidebar.png": "/Portfolio_webpage/static/media/sidebar.b2225070b8adae68d063.png",
     "static/media/musicapp.png": "/Portfolio_webpage/static/media/musicapp.f1c301f91904ef5f9249.png",
@@ -16,11 +16,11 @@
     "static/media/Vector2.png": "/Portfolio_webpage/static/media/Vector2.28db5bfd58081dd1df1b.png",
     "static/media/glasses.png": "/Portfolio_webpage/static/media/glasses.71d7c1b0ff0b870a9d7d.png",
     "index.html": "/Portfolio_webpage/index.html",
-    "main.ac9a8a1d.css.map": "/Portfolio_webpage/static/css/main.ac9a8a1d.css.map",
-    "main.fa869006.js.map": "/Portfolio_webpage/static/js/main.fa869006.js.map"
+    "main.a26a6c95.css.map": "/Portfolio_webpage/static/css/main.a26a6c95.css.map",
+    "main.0a491cea.js.map": "/Portfolio_webpage/static/js/main.0a491cea.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac9a8a1d.css",
-    "static/js/main.fa869006.js"
+    "static/css/main.a26a6c95.css",
+    "static/js/main.0a491cea.js"
   ]
 }
